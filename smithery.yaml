@@ -1,0 +1,10 @@
+name: tone-rewriter-ai-mcp
+description: "MEOK AI Labs — tone-rewriter-ai-mcp — Rewrite text in different tones."
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/tone-rewriter-ai-mcp
+license: MIT
+categories: [Writing, Content]
+tags: [tone-rewriting, content-adaptation, writing-style, text-transformation, brand-voice]
+runtime: python
+entrypoint: server.py
