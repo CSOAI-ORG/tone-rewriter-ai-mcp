@@ -1,0 +1,10 @@
+{
+  "name": "tone-rewriter-ai-mcp",
+  "description": "MEOK AI Labs \u2014 tone-rewriter-ai-mcp",
+  "vendor": "MEOK AI Labs",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/CSOAI-ORG/tone-rewriter-ai-mcp",
+  "license": "MIT",
+  "runtime": "python",
+  "entryPoint": "mcp-wrapper.py"
+}
