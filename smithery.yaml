@@ -1,6 +1,6 @@
 name: tone-rewriter-ai-mcp
-description: 'Text tone analysis and rewriting. Analyze, transform, and match text
-  tone for professional, casual, '
+description: 'Tone Rewriter Ai MCP server. Tools: analyze tone, rewrite tone, compare
+  tones. Built by MEOK AI Labs.'
 version: 1.0.0
 tools:
 - name: analyze_tone
