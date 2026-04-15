@@ -1,0 +1,54 @@
+{
+  "name": "tone-rewriter-ai",
+  "description": "Text tone analysis and rewriting. Analyze, transform, and match text tone for professional, casual, formal, and other styles. By MEOK AI Labs.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/tone-rewriter-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "analyze_tone",
+      "description": "Analyze the tone and sentiment of text. Returns detected tones, formality level, and word-level analysis."
+    },
+    {
+      "name": "rewrite_tone",
+      "description": "Rewrite text in a target tone (professional, casual, formal, urgent, empathetic)."
+    },
+    {
+      "name": "compare_tones",
+      "description": "Compare the tone of two text samples."
+    },
+    {
+      "name": "suggest_tone",
+      "description": "Suggest the best tone for a given context and audience."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning",
+    "Content & Media",
+    "Natural Language Processing"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
