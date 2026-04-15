@@ -1,30 +1,11 @@
 {
   "name": "tone-rewriter-ai-mcp",
-  "description": "tone-rewriter-ai-mcp \u2014 Rewrite text in different tones.",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Text tone analysis and rewriting. Analyze, transform, and match text tone for professional, casual, ",
   "version": "1.0.0",
   "tools": [
     {
-      "name": "rewrite_tone",
-      "description": "",
-      "parameters": {
-        "type": "object",
-        "properties": {
-          "text": {
-            "type": "string"
-          },
-          "tone": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "text",
-          "tone"
-        ]
-      }
-    },
-    {
-      "name": "tone_analysis",
-      "description": "",
+      "name": "analyze_tone",
+      "description": "Analyze the tone and sentiment of text. Returns detected tones, formality level, and word-level analysis.",
       "parameters": {
         "type": "object",
         "properties": {
@@ -34,6 +15,62 @@
         },
         "required": [
           "text"
+        ]
+      }
+    },
+    {
+      "name": "rewrite_tone",
+      "description": "Rewrite text in a target tone (professional, casual, formal, urgent, empathetic).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "target_tone": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "target_tone"
+        ]
+      }
+    },
+    {
+      "name": "compare_tones",
+      "description": "Compare the tone of two text samples.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text_a": {
+            "type": "string"
+          },
+          "text_b": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text_a",
+          "text_b"
+        ]
+      }
+    },
+    {
+      "name": "suggest_tone",
+      "description": "Suggest the best tone for a given context and audience.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "context": {
+            "type": "string"
+          },
+          "audience": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "context"
         ]
       }
     }

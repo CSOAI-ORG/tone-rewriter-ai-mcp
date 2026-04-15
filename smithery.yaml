@@ -1,19 +1,40 @@
 name: tone-rewriter-ai-mcp
-description: "tone-rewriter-ai-mcp \u2014 Rewrite text in different tones."
+description: 'Text tone analysis and rewriting. Analyze, transform, and match text
+  tone for professional, casual, '
 version: 1.0.0
 tools:
+- name: analyze_tone
+  description: Analyze the tone and sentiment of text. Returns detected tones, formality
+    level, and word-level analysis.
+  parameters:
+  - name: text
+    type: string
+    required: true
 - name: rewrite_tone
-  description: ''
+  description: Rewrite text in a target tone (professional, casual, formal, urgent,
+    empathetic).
   parameters:
   - name: text
     type: string
     required: true
-  - name: tone
+  - name: target_tone
     type: string
     required: true
-- name: tone_analysis
-  description: ''
+- name: compare_tones
+  description: Compare the tone of two text samples.
   parameters:
-  - name: text
+  - name: text_a
     type: string
     required: true
+  - name: text_b
+    type: string
+    required: true
+- name: suggest_tone
+  description: Suggest the best tone for a given context and audience.
+  parameters:
+  - name: context
+    type: string
+    required: true
+  - name: audience
+    type: string
+    required: false
