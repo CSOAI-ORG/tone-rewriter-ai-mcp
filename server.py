@@ -2,13 +2,21 @@
 """Tone Rewriter AI MCP — MEOK AI Labs. Text tone analysis, transformation, and style matching."""
 
 import sys, os
-sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
 from auth_middleware import check_access
 
 import json, re
 from datetime import datetime, timezone
 from collections import defaultdict
 from mcp.server.fastmcp import FastMCP
+
+STRIPE_199 = "https://buy.stripe.com/00wfZjcgAeUW4c5cyQ8k90K"
+
+def _add_upgrade_tail(response, tier="free"):
+    """Append upgrade nudge to free-tier success responses."""
+    if isinstance(response, dict) and tier == "free":
+        response["_upgrade_note"] = "Pro tier: unlimited calls + priority support. Upgrade: " + STRIPE_199
+    return response
+
 
 FREE_DAILY_LIMIT = 15
 _usage = defaultdict(list)
@@ -69,7 +77,7 @@ def analyze_tone(text: str, api_key: str = "") -> str:
     """Analyze the tone and sentiment of text. Returns detected tones, formality level, and word-level analysis."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": STRIPE_199}
     if err := _rl(): return err
 
     words = re.findall(r'\b\w+\b', text.lower())
@@ -113,7 +121,7 @@ def rewrite_tone(text: str, target_tone: str, api_key: str = "") -> str:
     """Rewrite text in a target tone (professional, casual, formal, urgent, empathetic)."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": STRIPE_199}
     if err := _rl(): return err
 
     tone_key = target_tone.lower().strip()
@@ -147,7 +155,7 @@ def compare_tones(text_a: str, text_b: str, api_key: str = "") -> str:
     """Compare the tone of two text samples."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": STRIPE_199}
     if err := _rl(): return err
 
     def quick_analysis(text):
@@ -181,7 +189,7 @@ def suggest_tone(context: str, audience: str = "general", api_key: str = "") -> 
     """Suggest the best tone for a given context and audience."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": STRIPE_199}
     if err := _rl(): return err
 
     context_lower = context.lower()
@@ -205,5 +213,8 @@ def suggest_tone(context: str, audience: str = "general", api_key: str = "") -> 
     return {"context": context, "audience": audience, "recommendations": recommendations}
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()
