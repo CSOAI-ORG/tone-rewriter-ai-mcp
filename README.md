@@ -1,65 +1,78 @@
-# Tone Rewriter Ai
+# Tone Rewriter Ai MCP
 
-> By [MEOK AI Labs](https://meok.ai) — Text tone analysis and rewriting. Analyze, transform, and match text tone for professional, casual, formal, and other styles. By MEOK AI Labs.
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/tone_rewriter_ai_mcp/)
 
-Tone Rewriter AI MCP — MEOK AI Labs. Text tone analysis, transformation, and style matching.
+> Text tone analysis and rewriting
 
-## Installation
+Text tone analysis and rewriting. Analyze, transform, and match text tone for professional, casual, formal, and other styles. By MEOK AI Labs.
+
+---
+
+## 🚀 Quick Start
 
 ```bash
-pip install tone-rewriter-ai-mcp
+# Install via pip
+pip install tone_rewriter_ai_mcp
+
+# Or install via Smithery
+npx -y @smithery/cli@latest install tone-rewriter-ai-mcp --client claude
 ```
 
-## Usage
+## ✨ Features
 
-```bash
-# Run standalone
-python server.py
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-# Or via MCP
-mcp install tone-rewriter-ai-mcp
-```
+## 📖 Documentation
 
-## Tools
+- [Full Documentation](https://docs.meok.ai/tone-rewriter-ai-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-### `analyze_tone`
-Analyze the tone and sentiment of text. Returns detected tones, formality level, and word-level analysis.
+## 🛡️ Compliance
 
-**Parameters:**
-- `text` (str)
+This MCP server is built with **EU AI Act compliance** built-in:
 
-### `rewrite_tone`
-Rewrite text in a target tone (professional, casual, formal, urgent, empathetic).
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-**Parameters:**
-- `text` (str)
-- `target_tone` (str)
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-### `compare_tones`
-Compare the tone of two text samples.
+## 🏢 Enterprise
 
-**Parameters:**
-- `text_a` (str)
-- `text_b` (str)
+Need custom development, SLA guarantees, or white-label deployment?
 
-### `suggest_tone`
-Suggest the best tone for a given context and audience.
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-**Parameters:**
-- `context` (str)
-- `audience` (str)
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
+## 🤝 Part of the MEOK Ecosystem
 
-## Authentication
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
 
-Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
 
-## Links
+## 📜 License
 
-- **Website**: [meok.ai](https://meok.ai)
-- **GitHub**: [CSOAI-ORG/tone-rewriter-ai-mcp](https://github.com/CSOAI-ORG/tone-rewriter-ai-mcp)
-- **PyPI**: [pypi.org/project/tone-rewriter-ai-mcp](https://pypi.org/project/tone-rewriter-ai-mcp/)
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 
-## License
+---
 
-MIT — MEOK AI Labs
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
