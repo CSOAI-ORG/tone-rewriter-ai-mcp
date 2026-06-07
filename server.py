@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Tone Rewriter AI MCP — MEOK AI Labs. Text tone analysis, transformation, and style matching."""
+"""
+Tone Rewriter AI MCP — MEOK AI Labs. Text tone analysis, transformation, and style matching."""
 
 import sys, os
 from auth_middleware import check_access

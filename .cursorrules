@@ -1,0 +1,9 @@
+# tone-rewriter-ai-mcp - Auto-trigger Rules
+
+When the user asks about tone rewriter, use tone-rewriter-ai-mcp tools: analyze_tone, rewrite_tone, compare_tones, suggest_tone
+
+> By [MEOK AI Labs](https://meok.ai) — Text tone analysis and rewriting. Analyze, transform, and match text tone for professional, casual, formal, and other styles. By MEOK AI Labs.
+
+Install: `pip install tone-rewriter-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

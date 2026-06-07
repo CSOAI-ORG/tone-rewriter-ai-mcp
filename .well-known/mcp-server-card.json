@@ -1,0 +1,25 @@
+{
+  "name": "tone-rewriter-ai-mcp",
+  "title": "Tone Rewriter Ai Mcp",
+  "description": "Tone Rewriter Ai MCP server. Tools: analyze tone, rewrite tone, compare tones. Built by MEOK AI Labs.",
+  "version": "1.0.5",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "analyze_tone"
+    },
+    {
+      "name": "rewrite_tone"
+    },
+    {
+      "name": "compare_tones"
+    },
+    {
+      "name": "suggest_tone"
+    }
+  ]
+}

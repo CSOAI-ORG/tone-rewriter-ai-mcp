@@ -1,0 +1,33 @@
+# tone-rewriter-ai-mcp
+# > By [MEOK AI Labs](https://meok.ai) — Text tone analysis and rewriting. Analyze, transform, and match text tone for professional, casual, formal, and other styles. By MEOK AI Labs.
+
+## Install
+```bash
+pip install tone-rewriter-ai-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
+
+## Tools
+
+### `analyze_tone`
+Analyze the tone and sentiment of text. Returns detected tones, formality level, and word-level analysis.
+
+### `rewrite_tone`
+Rewrite text in a target tone (professional, casual, formal, urgent, empathetic).
+
+### `compare_tones`
+Compare the tone of two text samples.
+
+### `suggest_tone`
+Suggest the best tone for a given context and audience.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.
