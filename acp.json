@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "tone-rewriter-ai-mcp",
+    "description": "Tone Rewriter Ai MCP server. Tools: analyze tone, rewrite tone, compare tones. Built by MEOK AI",
+    "version": "1.0.5",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "tone-rewriter-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "analyze_tone",
+      "rewrite_tone",
+      "compare_tones",
+      "suggest_tone"
+    ]
+  }
+}

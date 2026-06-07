@@ -1,0 +1,59 @@
+{
+  "name": "tone-rewriter-ai-mcp",
+  "description": "Tone Rewriter Ai MCP server. Tools: analyze tone, rewrite tone, compare tones. Built by MEOK AI",
+  "url": "https://proofof.ai/scorecard/tone-rewriter-ai-mcp.html",
+  "version": "1.0.5",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "analyze_tone",
+      "name": "Analyze Tone",
+      "description": "analyze_tone via tone-rewriter-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "rewrite_tone",
+      "name": "Rewrite Tone",
+      "description": "rewrite_tone via tone-rewriter-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "compare_tones",
+      "name": "Compare Tones",
+      "description": "compare_tones via tone-rewriter-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "suggest_tone",
+      "name": "Suggest Tone",
+      "description": "suggest_tone via tone-rewriter-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
