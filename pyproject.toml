@@ -3,7 +3,8 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 [project]
 name = "tone-rewriter-ai-mcp"
-version = "1.0.7"
+version = "1.0.10"
+readme = "README.md"
 description = "Tone Rewriter Ai MCP server. Tools: analyze tone, rewrite tone, compare tones. Built by MEOK AI Labs."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
